@@ -13,6 +13,9 @@
 		DE5783F227FCDF5500741B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5783F027FCDF5500741B0A /* Main.storyboard */; };
 		DE5783F427FCDF5500741B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5783F327FCDF5500741B0A /* Assets.xcassets */; };
 		DE5783F727FCDF5500741B0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5783F527FCDF5500741B0A /* LaunchScreen.storyboard */; };
+		DE57840127FCDFDF00741B0A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57840027FCDFDF00741B0A /* KeyboardViewController.swift */; };
+		DE57840327FCE00600741B0A /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57840227FCE00600741B0A /* BoardViewController.swift */; };
+		DE57840527FCE55000741B0A /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57840427FCE55000741B0A /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DE5783F327FCDF5500741B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5783F627FCDF5500741B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5783F827FCDF5500741B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE57840027FCDFDF00741B0A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		DE57840227FCE00600741B0A /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		DE57840427FCE55000741B0A /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		DE5783E927FCDF5500741B0A /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
-				DE5783EA27FCDF5500741B0A /* AppDelegate.swift */,
-				DE5783EC27FCDF5500741B0A /* SceneDelegate.swift */,
-				DE5783EE27FCDF5500741B0A /* ViewController.swift */,
+				DE5783FF27FCDF8600741B0A /* Other */,
+				DE5783FE27FCDF7900741B0A /* Core */,
 				DE5783F027FCDF5500741B0A /* Main.storyboard */,
 				DE5783F327FCDF5500741B0A /* Assets.xcassets */,
 				DE5783F527FCDF5500741B0A /* LaunchScreen.storyboard */,
 				DE5783F827FCDF5500741B0A /* Info.plist */,
 			);
 			path = Wordle;
+			sourceTree = "<group>";
+		};
+		DE5783FE27FCDF7900741B0A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE5783EE27FCDF5500741B0A /* ViewController.swift */,
+				DE57840027FCDFDF00741B0A /* KeyboardViewController.swift */,
+				DE57840227FCE00600741B0A /* BoardViewController.swift */,
+				DE57840427FCE55000741B0A /* KeyCell.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE5783FF27FCDF8600741B0A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DE5783EC27FCDF5500741B0A /* SceneDelegate.swift */,
+				DE5783EA27FCDF5500741B0A /* AppDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +166,9 @@
 				DE5783EF27FCDF5500741B0A /* ViewController.swift in Sources */,
 				DE5783EB27FCDF5500741B0A /* AppDelegate.swift in Sources */,
 				DE5783ED27FCDF5500741B0A /* SceneDelegate.swift in Sources */,
+				DE57840527FCE55000741B0A /* KeyCell.swift in Sources */,
+				DE57840127FCDFDF00741B0A /* KeyboardViewController.swift in Sources */,
+				DE57840327FCE00600741B0A /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
